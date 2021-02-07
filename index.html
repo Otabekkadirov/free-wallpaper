@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free wallpapers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">
+            <span class="far fa-image" style="color: rgb(161, 106, 106)"></span>
+            Free wallpapers
+        </h1>
+        <div class="input">
+            <input type="text" id="input" placeholder="Search wallpapers">
+            <button type="submit" id="button"><i class="fas fa-search"></i></button>
+        </div>
+
+    </div>
+    <div id="grid">
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+    <script>
+        input.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                loadImg();
+                event.preventDefault();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
